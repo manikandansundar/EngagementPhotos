@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engagement Phots</title>
+<style type="text/css">
+body {
+margin: 0px;
+background: #284352;
+z-index: 0;
+margin: 0;
+padding: 0;
+font: normal 16px/20px Lekton, sans-serif;
+}
+#wrapper {
+position: absolute;
+margin-left: 0px;
+top: 0;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+box-shadow: 0 0 10px rgba(0,0,0,0.4);
+width:100%;
+}
+.text {
+position: absolute;
+top: 100px;
+padding-right: 50px;
+}
+.text h1 {
+font-weight: normal;
+line-height: 130%;
+}
+.text h2 {
+font-weight: normal;
+line-height: 130%;
+}
+#gallery {
+position: absolute;
+width: 100%;
+height: 700px;
+top: 0;
+left: 0;
+}
+#controls{
+position:fixed;
+top:50%;
+width:100%;
+}
+#controls .next{
+float:right;
+}
+#controls div {
+display: inline-block;
+padding: 5px;
+margin: 1px;
+color: #fff;
+border: 1px solid #fff;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+}
+#controls div:hover:not(.counter) {
+background: rgba(255,255,255,.9);
+color: #000;
+}
+#controls div:not(.counter) {
+background: rgb(190, 41, 16);
+cursor: pointer;
+}
+#controls div.sel {
+background: rgba(255,255,255,.9);
+}
+.imgContainer {
+width: 100px;
+height: 100px;
+overflow: hidden;
+display: inline-block;
+}
+.imgContainer img {
+width: 160px;
+}
+</style>
+<script type="text/javascript" src="inc/jquery1.9.js"></script>
+<script type="text/javascript" src="inc/mb.bgndGallery.js"></script>
+<script type="text/javascript">
+
+        $(function(){
+            $.mbBgndGallery.buildGallery({
+                containment:"body",
+				autoStart:false,
+                //timer:1000,
+                //effTimer:5000,
+                controls:"#controls",
+                grayScale:false,
+                shuffle:false,
+                preserveWidth:false,
+                effect:"zoom", //zoom,fade,slideRight,slideLeft
+                images:[
+                    "http://manidesk.files.wordpress.com/2013/08/1.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/2.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/3.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/4.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/5.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/6.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/7.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/8.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/9.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/10.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/11.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/12.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/13.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/14.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/15.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/16.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/17.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/18.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/19.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/20.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/21.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/22.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/23.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/24.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/25.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/26.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/27.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/28.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/29.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/30.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/31.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/32.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/33.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/34.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/35.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/36.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/37.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/38.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/39.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/40.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/41.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/42.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/43.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/44.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/45.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/46.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/47.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/48.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/49.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/50.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/51.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/52.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/53.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/54.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/55.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/56.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/57.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/58.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/59.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/60.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/61.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/62.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/63.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/64.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/65.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/66.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/67.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/68.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/69.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/70.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/71.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/72.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/73.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/74.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/75.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/76.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/77.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/78.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/79.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/80.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/81.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/82.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/83.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/84.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/85.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/86.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/87.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/88.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/89.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/90.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/91.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/92.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/93.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/94.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/95.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/96.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/97.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/98.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/99.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/100.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/101.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/102.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/103.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/104.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/105.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/106.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/107.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/108.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/109.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/110.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/111.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/112.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/113.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/114.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/115.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/116.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/117.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/118.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/119.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/120.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/121.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/122.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/123.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/124.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/125.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/126.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/127.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/128.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/129.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/130.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/131.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/132.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/133.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/134.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/135.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/136.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/137.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/138.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/139.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/140.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/141.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/142.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/143.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/144.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/145.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/146.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/147.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/148.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/149.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/150.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/151.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/152.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/153.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/154.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/155.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/156.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/157.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/158.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/159.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/160.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/161.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/162.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/163.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/164.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/165.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/166.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/167.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/168.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/169.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/170.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/171.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/172.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/173.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/174.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/175.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/176.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/177.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/178.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/179.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/180.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/181.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/182.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/183.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/184.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/185.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/186.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/187.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/188.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/189.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/190.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/191.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/192.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/193.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/194.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/195.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/196.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/197.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/198.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/199.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/200.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/201.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/202.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/203.jpg",
+					"http://manidesk.files.wordpress.com/2013/08/204.jpg",
+                ],
+
+                onStart:function(){},
+                onPause:function(){},
+                onPlay:function(opt){},
+                onChange:function(opt,idx){},
+                onNext:function(opt){},
+                onPrev:function(opt){}
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="controls">
+		<!-- <div class="pause">pause</div>
+		<div class="play">play</div> -->
+		<div class="prev">prev</div>
+		<div class="next">next</div>
+		<div style="display:none;" class="counter"></div>
+		<div style="display:none;" class="bw">gray scale</div>
+	</div>
+</div>
+</body>
+</html>
